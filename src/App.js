@@ -1,8 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import '@shopify/shopify-api/adapters/node';
-
-import { getProducts } from './utils/shopifyApi';
 
 function App() {
   return (
@@ -19,9 +16,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-          {getProducts().then((response) => {
-            console.log(response)
-          })}
         </a>
       </header>
     </div>
